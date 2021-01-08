@@ -22,7 +22,6 @@ public class HealthSliderChange : MonoBehaviour
         {
             _slider.DOValue(valueChange, 1);
         }
-
     }
 
     public void ReduceHealth()
