@@ -6,7 +6,7 @@ using DG.Tweening;
 
 public class HealthSliderChange : MonoBehaviour
 {
-    private float _variableValue = 1;
+    private float _variableValue = 10;
     private Slider _slider;
 
     private void Start()
@@ -24,12 +24,12 @@ public class HealthSliderChange : MonoBehaviour
         }
     }
 
-    public void ReduceHealth()
+    public void TakeDamage()
     {
         ChangeValue(_variableValue * -1);
     }
 
-    public void IncreaseHealth()
+    public void Cure()
     {
         ChangeValue(_variableValue);
     }
