@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class ChangeSliderFromHealth : MonoBehaviour
 {
@@ -26,6 +27,6 @@ public class ChangeSliderFromHealth : MonoBehaviour
 
     private void ChangeValue(float value)
     {
-        _slider.value = value;
+        _slider.DOValue(value, 1);
     }
 }
